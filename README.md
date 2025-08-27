@@ -8,7 +8,7 @@ This workflow can be scheduled to operate on different intervals. It can be appl
 worldwide.
 
 To run, set up a `.env` file with the correct variable names and values. You’ll need external APIs:  
-- **Groq Cloud** (`GROQ_API_KEY`) for the LLM summary  
+- **Groq Cloud** (`GROQ_API_KEY`) for the LLM summary - different LLMs can also be used
 - **QuickChart** (no key needed) for rendering the chart  
 - **Gmail SMTP** (`GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`) for sending the email
 
