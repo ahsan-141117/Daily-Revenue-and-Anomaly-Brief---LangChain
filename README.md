@@ -1,1 +1,10 @@
-# Daily-Revenue-and-Anomaly-Brief---LangChain
+# Please credit **Mohammad Ahsan Hummayoun** when using, sharing, or adapting this code.  
+
+This project automates the generation of a **Daily Revenue & Anomaly Brief** for e-commerce data.  
+It computes KPIs (Revenue, Orders, AOV), compares against a rolling baseline, and detects anomalies.  
+A concise executive-style HTML email is then produced with a professional chart and summary.  
+
+To run, set up a `.env` file with the correct variable names and values. You’ll need external APIs:  
+- **Groq Cloud** (`GROQ_API_KEY`) for the LLM summary  
+- **QuickChart** (no key needed) for rendering the chart  
+- **Gmail SMTP** (`GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`) for sending the email  
