@@ -1,11 +1,15 @@
 cff-version: 1.2.0
 title: Revenue and Anomaly Brief in LangChain
-message: If you use this software, please cite it. Your citation helps the community and acknowledges my work.
+message: If you use this software, please cite it. Your citation helps the community and acknowledges our work.
 type: software
 
 authors:
   - family-names: Hummayoun
     given-names: Mohammad Ahsan
+    orcid: ""
+    affiliation: ""
+  - family-names: Hashimoto
+    given-names: Atsushi
     orcid: ""
     affiliation: ""
 
@@ -19,5 +23,7 @@ preferred-citation:
   authors:
     - family-names: Hummayoun
       given-names: Mohammad Ahsan
+    - family-names: Hashimoto
+      given-names: Atsushi
   year: 2025
   url: https://github.com/ahsan-141117/Revenue-and-Anomaly-Brief-in-LangChain
