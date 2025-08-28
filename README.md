@@ -1,4 +1,4 @@
-# Please credit **Mohammad Ahsan Hummayoun** and **Atsushi Hashimoto** when using, sharing, or adapting this code.  
+# Please credit **Mohammad Ahsan Hummayoun** and **Atsushi Hashimoto** when using, sharing, or adapting this code 
 
 This project automates the generation of a **Daily Revenue & Anomaly Brief** for e-commerce data.  
 It computes KPIs (Revenue, Orders, AOV), compares against a rolling baseline, and detects anomalies.  
