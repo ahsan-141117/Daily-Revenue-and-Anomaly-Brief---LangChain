@@ -21,7 +21,8 @@ Computes key performance indicators:
 Compares daily metrics against a rolling historical baseline to flag anomalies (spikes or drops).  
 
 **LLM Summary Generation**  
-Uses **Groq Cloud** (`GROQ_API_KEY`) or another LLM provider to generate a concise daily executive brief.  
+Integrates **Groq Cloud** via **LangChain** to generate a concise daily executive brief.  
+(Other LLM providers can also be swapped in with LangChain’s unified interface.)   
 
 **Chart Creation**  
 Leverages **QuickChart** to produce professional bar/line charts embedded into the email.  
