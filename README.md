@@ -1,15 +1,30 @@
 # Please credit **Mohammad Ahsan Hummayoun** and **Atsushi Hashimoto** when using, sharing, or adapting this code 
 
 This project automates the generation of a **Daily Revenue & Anomaly Brief** for e-commerce data.  
-It computes KPIs (Revenue, Orders, AOV), compares against a rolling baseline, and detects anomalies.  
+It computes KPIs (Revenue, Orders, AOV), compares results against a rolling baseline, and detects anomalies.  
 A concise executive-style HTML email is then produced with a professional chart and summary.  
 
-This workflow can be scheduled to operate on different intervals. It can be applied to Retail and E-Commerce stores 
-worldwide.
+This workflow can be scheduled to operate on different intervals and applied to retail and e-commerce stores worldwide.
 
-To run, set up a `.env` file with the correct variable names and values. You’ll need external APIs:  
-- **Groq Cloud** (`GROQ_API_KEY`) for the LLM summary - different LLMs can also be used
-- **QuickChart** (no key needed) for rendering the chart  
-- **Gmail SMTP** (`GMAIL_ADDRESS`, `GMAIL_APP_PASSWORD`) for sending the email
+# ⚙️ How it Works
 
-A sample testing dataset (CSV) was used to run the workflow. It has also been attached.
+**Data Ingestion**  
+Reads transactional data (CSV or other sources) containing order IDs, order dates, and totals.  
+
+**KPI Calculation**  
+Computes key performance indicators:  
+- Total Revenue  
+- Number of Orders  
+- Average Order Value (AOV)  
+
+**Baseline Comparison & Anomaly Detection**  
+Compares daily metrics against a rolling historical baseline to flag anomalies (spikes or drops).  
+
+**LLM Summary Generation**  
+Uses **Groq Cloud** (`GROQ_API_KEY`) or another LLM provider to generate a concise daily executive brief.  
+
+**Chart Creation**  
+Leverages **QuickChart** to produce professional bar/line charts embedded into the email.  
+
+**Email Delivery**  
+Sends the daily report as a styled HTML email via **Gmail SMTP**.  
